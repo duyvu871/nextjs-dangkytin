@@ -1,6 +1,6 @@
 module.exports = {
   apps : [{
-    script: 'PORT=2000 npx next start',
+    script: 'PORT=1124 npx next start',
     watch: '.',
    name: 'tin'
   }],
