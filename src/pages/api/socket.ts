@@ -53,7 +53,7 @@ export default function SocketHandler(
         path: "/api/socket",
         addTrailingSlash: false,
         cors: { origin: "*" },
-    }).listen(Number(process.env.PORT) + 1);
+    }).listen(Number(process.env.PORT)+1);
 
     io.on("connect", (socket) => {
         const _socket = socket;

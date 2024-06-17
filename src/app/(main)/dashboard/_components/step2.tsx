@@ -26,9 +26,9 @@ export default function Step2() {
 	React.useEffect(() => {
 		if (step_now == 1) return;
 		setLog([]);
-        console.log(Number(process.env.NEXT_PUBLIC_PORT));
+        // console.log(`${process.env.NEXT_PUBLIC_SOCKET_URL}:${Number(process.env.PORT)+1}`);
         
-		const socket = io(`${process.env.NEXT_PUBLIC_SOCKET_URL}:${Number(process.env.NEXT_PUBLIC_PORT)+1}`, {
+		const socket = io(`:${Number(process.env.PORT)+1}`, {
 			path: process.env.NEXT_PUBLIC_SOCKET_PATH,
 			addTrailingSlash: false,
 			transports: ["websocket"],
