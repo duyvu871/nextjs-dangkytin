@@ -1,6 +1,6 @@
 module.exports = {
   apps : [{
-    script: 'set DEV_HOSTNAME=14.225.218.92&&set PORT=1124&&npx next start',
+    script: 'set DEV_HOSTNAME=14.225.218.92&&set PORT=1123&&npx next start',
     watch: '.',
    name: 'tin'
   }],
