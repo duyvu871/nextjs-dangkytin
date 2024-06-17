@@ -31,7 +31,7 @@ export default function Step2() {
 		const socket = io(`${process.env.NEXT_PUBLIC_SOCKET_URL}:${Number(process.env.PORT)+1}`, {
 			path: process.env.NEXT_PUBLIC_SOCKET_PATH,
 			addTrailingSlash: false,
-			// transports: ["websocket"],
+			transports: ["websocket"],
 		});
 
         socket.on("connect", () => {
