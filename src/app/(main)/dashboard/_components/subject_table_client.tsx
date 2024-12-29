@@ -35,10 +35,10 @@ export default React.memo(function SubjectTableClient({ plan }: Props) {
 	const { data, status } = useSession();
 	const dispatch = useAppDispatch();
 	React.useLayoutEffect(() => {
-		if (localStorage.getItem("tenMon")) {
-			setMon(JSON.parse(localStorage.getItem("tenMon") || "[]"));
-			return;
-		}
+		// if (localStorage.getItem("tenMon")) {
+		// 	setMon(JSON.parse(localStorage.getItem("tenMon") || "[]"));
+		// 	return;
+		// }
 		data &&
 			getListSubject(data).then((d) => {
 				if (d) {
