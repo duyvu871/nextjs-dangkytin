@@ -73,6 +73,7 @@ const authOptions: AuthOptions = {
 								},
 							});
 							if (!isExists) {
+								// TODO: implement secure password storage
 								await prisma.users.create({
 									data: {
 										student_code:
